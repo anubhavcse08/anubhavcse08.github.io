@@ -6,8 +6,8 @@ public class ChekingAlphabetOrNot {
     	  Scanner Scan = new Scanner(System.in);
     	  System.out.println(" Enter the character : ");
     	  ch = Scan.next().charAt(0);
-    	  if((ch >='a' && ch<='z')) || ((ch>='A' && ch<='Z'))
-    	  { 
+    	  if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+    	  {
     		  System.out.println( ch + "is an alphabet...");
     	  }
     	  else
