@@ -9,11 +9,11 @@ public class OddNumber {
 		n=sc.nextInt();
 		if(a%2==0)
 		{
-			a++;
+			for(b=a;a<=n;a+=2)
+				System.out.println("the odd numbers are : "+ a );
 		}
-		for(b=a;a<=n;a+=2){
-		System.out.println("the odd numbers are : "+ a );
-	}
+	
+	
 	}
 
 }
