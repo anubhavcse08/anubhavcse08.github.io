@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+footer,
+nav{
+  display: block;
+}
+									
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+	font-family: 'Oswald', sans-serif;
+	font-size:16px;
+	line-height: 1.75;
+        padding: 0;
+        margin: auto;
+	font-size: 16px;
+  	line-height: 1.42857143;
+        background-color: #f4f4f4;
+	width: 100%;
+
+	
+}
+	/* slide photo content ==========*/
+  .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(20%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      opacity: 0.6;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+	  font-size: 30px;
+  }
+  .carousel-caption p {
+      color: #fff !important;
+	  font-size: 25px;
+  }
+    @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+
+
+	/* header Anubhav official page ==========*/	
+header{
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 10px;
+	border-bottom: #00cc00 3px solid;
+	min-height: 80px;	
+}  
+header #branding{
+	float:left;	
+}
+
+header #branding h1{
+	margin: 0;
+}
+header .highlight , header {
+	color: #00b300;
+	font-weight: bold;
+	
+}
+
+
+	/* first-letter color  ==========*/	
+h1.h::first-letter {
+	color: red;
+	font-size: 60px;
+}
+
+
+
+	/* footer content ==========*/	
+#footer {
+		margin-bottom: 0;
+		margin-top:974px;
+		padding: 4rem 0 2rem 0 ;
+		background: #002200;
+		text-align: center;
+	}
+#footer .copyright {
+		color: white;
+		font-size: 17px;
+		text-align: center;
+	}
+
+.footimage{
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    margin-left:12px;
+	margin-top:-50px;
+	width:40px;
+	height:40px;
+}	
+
+
+
+
+
+
+@media screen and (max-width:980px){
+  #footer {
+    margin-top:755px;
+    margin-bottom: 0;
+    padding: 4rem 0 2rem 0 ;s
+    background: #000;
+    text-align: center;
+  }
+}
+@media (min-width: 992px ) {
+.container {
+         width: 960px;
+        }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+.container{
+            width: 80%;
+        }	
+}		
+
+
+
+/* log grid =====================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33%;
+    padding: 16px;
+	text-align:center;
+	color:#6495ED;
+}
+
+.colume p{
+	font-size: 14px;
+}
+.column img {
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}	
