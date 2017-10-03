@@ -147,10 +147,10 @@ body {
 /* Create four equal columns that floats next to each other */
 .column {
     float: left;
-    width: 30%;
+    width: 33%;
     padding: 16px;
-	text-align:center;
-	color:#6495ED;
+    text-align:center;
+    color:#6495ED;
 }
 
 .colume p{
