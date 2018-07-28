@@ -2,7 +2,7 @@
 <html lang="en-US">
 <title>Anubhav || Web</title>
 <head>
-  <link rel="icon" href="studentstudy.png" type="image/x-icon">
+  <link rel="icon" href="image/studentstudy.png" type="image/x-icon">
   <meta charset="utf-8">
   <meta name="description" content="Anubhav's Official - Website || Developer - Anubhav">
 		<meta name="keywords" content="Anubhav,Anubhav Official,Developer Anubhav,Anubhav Home,Anubhav">
@@ -13,15 +13,15 @@
 		<meta property="og:url" content="https://anubhavcse08.github.io">
     		<meta property="og:site_name" content="Anubhav || Web">
     		<meta property="og:description" content="Anubhav Official - Website || Developer - Anubhav">
-    		<meta property="og:image" content="Anubhavlogo.jpg">
+    		<meta property="og:image" content="image/Anubhavlogo.jpg">
     		<meta property="og:image:type" content="image/jpg">
 		<meta property="og:image:width" content="1200">
 		<meta property="og:image:height" content="1200">
-		<meta property="og:image" content="Anubhavlogo.jpg">
+		<meta property="og:image" content="image/Anubhavlogo.jpg">
 		<meta property="og:image:type" content="image/jpg">
 		<meta property="og:image:width" content="1200">
 		<meta property="og:image:height" content="620">
-		<meta property="og:image" content="Anubhavlogo.jpg">
+		<meta property="og:image" content="image/Anubhavlogo.jpg">
 		<meta property="og:image:type" content="image/jpg">
 		<meta property="og:image:width" content="1200">
 		 <meta property="og:image:height" content="620">
@@ -32,60 +32,106 @@
   <meta http-equiv="x-UA-Compatible"content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" id="stylesheet-css"  href="index_style.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="aos/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="aos/aos.js"></script>
+     <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+   <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
   
 </head>
 <style>
 
 	/* jumbotron NAMASTE ==========*/	
-.jumbotron{
-
-	color: #fff;
+.jumbo{
+    color: white;
 	background: #8B0000;
-	margin:0;
+    margin-bottom: 0;
+    padding: 50px;
+    background-image: url(image/sunrise.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+	
 }
-.jumbotron h1{
+.jumbo h1{
 	text-align: center;
 	font-size: 40px;
 	font-weight: bold;
 	line-height: 0;
-	color:white;	
+	color:white;
+    
+}
+    
+#marq {
+    width: 450px;
+    height: 50px;
+}
+#marq img {
+    width: 60px; 
 }
 	/* jumbotron NAMASTE ==========*/						
-@media (max-width: 768px) {
-
-      .jumbotron h1{
-	font-size: 18px;
+@media (max-width: 767px) {
+    #marq {
+        width: 200px;
+        height: 50px;
+    }
+    #marq img {
+        width: 50px; 
+    }
+    .jumbo h1{
+	    font-size: 20px;
+	}
+    #namaste {
+        font-size: 35px; 
+    }
+  
+}
+@media (max-width: 968px) {
+    #marq {
+        width: 100px;
+        height: 50px;
+    }
+     #marq img {
+        width: 50px; 
+    }
+      .jumbo h1{
+	font-size: 25px;
 	}
         
-	.jumbotron h2{
-	font-size: 12px;
-	}
+    #namaste {
+        font-size: 25px; 
+    }
 }
-
 
 </style>
 <header>
-			<div class="container">
-				<div id="branding">
-					<h1 style="color:white;text-transform:none"><span class="highlight">Anubhav</span> Official Page</h1>
-				</div>	
-			</div>
+    <div class="container">
+        <div id="branding">
+            <h1 class="h" style="color:white;text-transform:none" data-aos="zoom-in-down"><span class="highlight" >Anubhav</span> Official Page</h1>
+        </div>
+    </div>
 	<div class="rows">
-    <div class="col-sm-4" style="background-color:lavender;text-align:center;color:red;font-size:20px"><a href="https://anubhavcse08.github.io/anubhavpro" target="_blank">Home</a></div>
-    <div class="col-sm-4" style="background-color:lavenderblush;text-align:center;color:red;font-size:20px"><a href="ResumeAnubhav.pdf" target="_blank">Resume</a></div>
-    <div class="col-sm-4" style="background-color:lavender;text-align:center;color:red;font-size:20px"><a href="anup.html" target="_blank">Profile</a></div>
+        <div class="col-sm-4" style="background-color:lavender;text-align:center;color:red;font-size:20px"><a href="#Boo">Home</a></div>
+        <div class="col-sm-4" style="background-color:lavenderblush;text-align:center;color:red;font-size:20px"><a href="song/ResumeAnubhav.pdf" target="_blank">Resume</a></div>
+        <div class="col-sm-4" style="background-color:lavender;text-align:center;color:red;font-size:20px"><a href="anup.html" target="_blank">Profile</a></div>
     </div>
 </header>
 
 
 
-<body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;" onload="myFunction()" style="margin:0;color:rgb(128,128,128)">
+<body onload="myFunction()" style="margin:0;color: red">
  
-<!-- about video -->
+<!-- about video         oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;"  -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -99,8 +145,8 @@
 
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <a name="Boo"><img src="anubhavofficial.jpg" alt="Computer" width="1200" height="700"></a>
-        <div class="carousel-caption">
+        <a name="Boo"><img id="mainpic" src="image/anubhavofficial.jpg" alt="Computer" width="1200" height="700"></a>
+        <div class="carousel-caption" data-aos="zoom-out-down">
           <h1>Official Web Page <br> Anubhav || Web Developer</h1><br>
 				<p>“I can't change the direction of the wind, but I can adjust my sails to always reach my destination.”</p>
 				<br><br><br><br><br><br><br>
@@ -108,7 +154,7 @@
       </div>
 
       <div class="item">
-        <img src="support.jpg" alt="India" width="1200" height="700">
+        <img id="mainpic" src="image/support.jpg" alt="India" width="1200" height="700">
         <div class="carousel-caption">
          <h1>Official Web Page <br> Anubhav || Web Developer</h1><br>
 				<p>“I can't change the direction of the wind, but I can adjust my sails to always reach my destination.”</p>
@@ -117,7 +163,7 @@
       </div>
     
       <div class="item">
-        <img src="supernature.jpg" alt="butterfly" width="1200" height="700">
+        <img id="mainpic" src="image/earth.jpg" alt="earth" width="1200" height="700">
         <div class="carousel-caption">
          <h1>Official Web Page <br> Anubhav || Web Developer</h1><br>
 				<p>“I can't change the direction of the wind, but I can adjust my sails to always reach my destination.”</p>
@@ -137,103 +183,176 @@
 </div>
 <!-- about video finished -->
 
-<div class="jumbotron">
-<h1 class="h" > <img src="namaste-png.png" style="width:50px;color:maroon">NAMASTE !!!<img src="namaste-png.png" style="width:50px"></h1>
+<div class="jumbo">
+    <h1 data-aos="zoom-in-down" style="align-content: center"> <marquee id="marq" behavior="alternate" direction="right" scrollamount="5"><img class="animated rubberBand infinite" src="image/namaste-png.png"></marquee><span id="namaste">NAMASTE !!!</span><marquee id="marq" behavior="alternate" direction="left" scrollamount="5"><img class="animated rubberBand infinite" src="image/namaste-png.png"></marquee></h1>
 </div>
 <!-- My thoughts our story -->
-<section class="full section overflow-hidden" id="our-story" style="color:green">
-		<div class="wrap cf os-animation animated fadeIn" data-os-animation="fadeIn">
+<section class="full section" id="our-story" style="color:green;margin-bottom: 50px;">
+		<div class="wrap cf" data-aos="zoom-in-up">
 			<div class="m-all t-1of2 d-1of2 last-col">
-				<h1 class="h" style="color:green">My Thought</h1>
-			
-				<p class="big">Optimise is the faith that leads to achievement. Nothing can be done without hope and confidence.</p>
-				<p class="big1">A good teacher can inspire hope, ignite the imagination and instill a love of learning.</p>
-				<p class="big">Good, Better, Best. Never let it rest. "Till your good is better and your better is best."</p>
-				<p class="big1">Let us remember: One book, one pen, one child, and one teacher can change the world.</p>
-				<p class="big">Let us make our future now, and let us make our dreams tomorrow's reality.</p>
+                   <div id="mythought">
+                        <h1 class="h">My Thought</h1>
+                        <p data-aos="zoom-in-left" class="big">Optimise is the faith that leads to achievement. Nothing can be done without hope and confidence.</p>
+                        <p data-aos="zoom-in-right" class="big1">A good teacher can inspire hope, ignite the imagination and instill a love of learning.</p>
+                        <p data-aos="zoom-in-left" class="big">Good, Better, Best. Never let it rest. "Till your good is better and your better is best."</p>
+                        <p data-aos="zoom-in-right" class="big1">Go confidently in the direction of your dreams. Live the life you have imagined.</p>
+                        <p data-aos="zoom-in-left" class="big">Let us make our future now, and let us make our dreams tomorrow's reality.</p>
+                        <p data-aos="zoom-in-right" class="big1">There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.</p>
+                    </div>
 			</div> <!-- col -->
 		</div> <!-- .wrap -->
-		<div class="section-bg os-animation animated fadeIn" data-os-animation="fadeIn">
-			<figure style="background-image: url(our-story-1024x637.png);"></figure>
+		<div class="section-bg" id="visibilityHidden">
+			<figure data-aos="zoom-in-up" style="background-image: url(image/our-story-1024x637.png);"></figure>
 		</div> <!-- .section-bg -->
-
 </section>
-	
-<!-- logo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="skill-logo-pencil.png" style="width:45%">
-	 <h3>Skills</h3>
-	<p>Programmer, Web Designing, Software Developing, Confident and Consistent</p>
+<div id="bgContent">
+<div class="container">
+	 <div class="row" style="margin: 40px;padding: 10px">
+    <div class="col-md-4">
+      <div class="thumbnail" data-aos="zoom-in-right">
+          <img class="rote" src="image/skill-logo-pencil.png" alt="Skills" style="width:75%">
+          <div class="caption" style="text-align:center">
+          	 <h3>Skills</h3>
+	            <p id="paraSize">Programmer, Web Designing, Software Developing, Confident and Consistent</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail" data-aos="zoom-out-up">
+          <img class="rote" src="image/world-language-logo.png" alt="Languages" style="width:78%">
+          <div class="caption" style="text-align:center">
+             <h3>Languages</h3>
+	             <p id="paraSize">English, Hindi, Bhojpuri, Tamil, Sanskrit</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail" data-aos="zoom-in-left">
+          <img class="rote" src="image/programmer-logo.png" alt="Programmer" style="width:74%">
+          <div class="caption" style="text-align:center">
+             	 <h3>Programming</h3>
+	             <p id="paraSize"> JAVA, C, c#, HTML, CSS, JAVASCRIPT</p>
+          </div>
+      </div>
+    </div>
   </div>
-  <div class="column">
-    <img src="world-language-logo.png" style="width:45%">
-	 <h3>Languages</h3>
-	<p>English, Hindi, Bhojpuri, Tamil, Sanskrit</p>
+  <div class="row" style="margin: 40px;padding: 10px">
+    <div class="col-md-4">
+      <div class="thumbnail" data-aos="zoom-in-right">
+          <img class="rote" src="image/achivement-logo.png" alt="Achivements" style="width:69%">
+          <div class="caption" style="text-align:center">
+            <h3>Achivements</h3>
+	        <p id="paraSize">Got 2<sup>nd</sup> prize in Cricket at distict level in Bihar. Not when there is nothing more to add, but when there is nothing left to take away<br/>Soon</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail"data-aos="zoom-out-up">
+          <img class="rote" src="image/hobby-logo.png" alt="Hobbies" style="width:95%">
+          <div class="caption" style="text-align:center">
+            <h3>Hobbies</h3>
+	        <p id="paraSize">Playing Cricket, Badminton, Listening music, Reading Story, Coding</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail" data-aos="zoom-in-left">
+          <img class="rote" src="image/education-logo.png" alt="Education" style="width:81%">
+          <div class="caption" style="text-align:center">
+            	 <h3>Education</h3>
+	             <p id="paraSize">Studying Computer Science And Engineering at K.S.R. College Of Engineering</p>
+          </div>
+      </div>
+    </div>
   </div>
-    <div class="column">
-    <img src="programmer-logo.png" style="width:50%">
-	 <h3>Programming</h3>
-	<p> C, C++, JAVA, HTML, CSS, BOOTSTRAP, ANDROID</p>
-  </div>
-    <div class="column">
-    <img src="achivement-logo.png" style="width:50%">
-	 <h3>Achivements</h3>
-	<p>Got 2<sup>nd</sup> prize in Cricket at distict level in Bihar. Not when there is nothing more to add, but when there is nothing left to take away<br/>Soon</p>
-  </div>
-    <div class="column">
-    <img src="hobby-logo.png" style="width:60%">
-	 <h3>Hobbies</h3>
-	<p>Playing Cricket, Badminton, Hockey, Listening music, Reading Story, Coding</p>
-  </div>
-    <div class="column">
-    <img src="education-logo1.png" style="width:50%">
-	 <h3>Education</h3>
-	<p>Studying Computer Science And Engineering at K.S.R. College Of Engineering</p>
-  </div>
-
 </div>
+</div>
+
 <!-- college id -->
 <section class="full section overflow-hidden" id="our-story" style="color:green">
-		<div class="wrap cf os-animation animated fadeIn" data-os-animation="fadeIn">
+		<div class="wrap cf">
 			<div class="m-all t-1of2 d-1of2 last-col" >
+			<div id="clgID" data-aos="zoom-in-down">
 			<a name="collegeid"><h1 class="h" style="color:#006400">College ID</h1></a>
-			      <img src="anuID.png" style="width:320px;align:center">	
+			      <img src="image/anuID.png" style="width:320px;align:center;z-index: 2">
 			</div> <!-- col -->
 		</div> <!-- .wrap -->
-		<div class="section-bg os-animation animated fadeIn" data-os-animation="fadeIn">
-			<figure style="background-image: url(our-story-1024x637.png);"></figure>
+		</div>
+		<div class="section-bg" id="visibilityHidden">
+			<figure data-aos="zoom-in-left" style="background-image: url(image/our-story-1024x637.png);"></figure>
 		</div> <!-- .section-bg -->
-
 </section>
 
-
 <footer id="footer">
-          <a href="https://api.whatsapp.com/send?phone=919087183638"  target="_blank"><img src="whatsapp.png" class="footimage"/></a>
-          <a href="mailto:anubhavcse08@gmail.com/" target="_blank" ><img src="gmail.png" class="footimage" /></a>
-          <a href="https://www.linkedin.com/in/anubhav-kumar-6304a7156/"  target="_blank"><img src="linkedin.png" class="footimage"/></a>
-          <a href="https://www.facebook.com/anubhav.kashyap.395"  target="_blank"><img src="facebook.png" class="footimage"/></a>
-		  <a href="https://www.instagram.com/anubhavcse08/"  target="_blank"><img src="instagram-png.png" class="footimage"/></a>
+          <a href="https://web.whatsapp.com/"  target="_blank"><img src="image/whatsapp.png" class="footimage"/></a>
+          <a href="mailto:anubhavcse08@gmail.com/" target="_blank" ><img src="image/gmail.png" class="footimage" /></a>
+          <a href="https://www.linkedin.com/in/anubhavcse08/"  target="_blank"><img src="image/linkedin.png" class="footimage"/></a>
+          <a href="https://www.facebook.com/anubhav.kashyap.395"  target="_blank"><img src="image/facebook.png" class="footimage"/></a>
+		  <a href="https://www.instagram.com/anubhavcse08/"  target="_blank"><img src="image/instagram-png.png" class="footimage"/></a>
 				<div class="copyright">
 					<p>Copyright © 2017 Anubhav || Web Developer</p>
 				</div>
 </footer>
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top" class="animated bounce infinite"><i class="icon-chevron-up">▲</i></a>
 
+<script>
+//return to Top
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {
+        $('#return-to-top').fadeIn(200);
+    } else {
+        $('#return-to-top').fadeOut(200); 
+    }
+});
+$('#return-to-top').click(function() {   
+    $('body,html').animate({
+        scrollTop : 0                       
+    }, 500);
+});
+    
+    
+    
+AOS.init({
+  duration: 1500,
+})
+ 
+$('#branding').addClass('animated pulse infinite');
 
-	
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5b35ac00eba8cd3125e349ab/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+$( ".item" ).on( "mouseenter mouseleave", function( event ) {
+  $( this ).toggleClass( 'animated pulse');
+});
+$( ".jumbo" ).on( "mouseenter mouseleave", function( event ) {
+  $( this ).toggleClass( 'animated pulse');
+});
+$( ".full" ).on( "mouseenter mouseleave", function( event ) {
+  $( this ).toggleClass( 'animated pulse');
+});
+$('#namaste').addClass('animated rotateIn infinite');
+    
+ $( ".big1" ).on( "mouseenter mouseleave", function( event ) {
+  $( this ).toggleClass( 'animated bounceIn');
+});
+$( ".big" ).on( "mouseenter mouseleave", function( event ) {
+  $( this ).toggleClass( 'animated bounceIn');
+});
+$( ".thumbnail" ).on( "mouseenter mouseleave", function( event ) {
+  $( this ).toggleClass( 'animated rotateIn');
+});
+$( '.rote' ).on( "mouseenter mouseleave", function( event ) {
+  $( this ).toggleClass( 'animated rotateIn');
+});
+$( "#clgID" ).on( "mouseenter mouseleave", function( event ) {
+  $( this ).toggleClass( 'animated wobble');
+});
+$( "a" ).on( "mouseenter mouseleave", function( event ) {
+  $( this ).toggleClass( 'animated fadeIn');
+});
+$( "#footer" ).on( "mouseenter mouseleave", function( event ) {
+  $( this ).toggleClass( 'animated pulse');
+});
 </script>
-<!--End of Tawk.to Script-->
+
 </body>
 </html>
 

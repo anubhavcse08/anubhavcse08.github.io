@@ -13,7 +13,7 @@ body {
 }
 #myDIV {
     outline: 15px solid green;
-	background: red url('smiley2.gif') no-repeat left/20px 20px;
+	background: red url('image/smiley2.gif') no-repeat left/20px 20px;
     -webkit-animation: mymove 6s infinite;
     animation: mymove 6s infinite;
 }
@@ -26,7 +26,7 @@ body {
     
     
 canvas {
-	background-image: url(canvasImg.png);
+	background-image: url(image/canvasImg.png);
 }
 #instructions {
 	position: absolute;
@@ -41,7 +41,7 @@ canvas {
 }
 </style>
 <head>
- <link rel="icon" href="studentstudy.png" type="image/x-icon">
+ <link rel="icon" href="image/studentstudy.png" type="image/x-icon">
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -51,7 +51,7 @@ canvas {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js"></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/OrbitControls-2.js"></script>
-  <script src="AmazingJS/js/index.js"></script>
+  <script src="js/index.js"></script>
 </head>
 
 <body id="bd">
@@ -62,7 +62,7 @@ canvas {
 <script>
     function myFunction(){
         document.getElementById("bd").style.backgroundColor="#fdefe7";
-        document.getElementById("p011").src = "Anu.jpg";
+        document.getElementById("p011").src = "image/Anu.jpg";
     }
 
 </script>
@@ -73,7 +73,7 @@ onmouseout="style.color='#fff'">ANUBHAV'S   PROFILE</h1>
 </A>
 </div>
 
-<blockquote ><abbr title="ANUBHAV KUMAR"><a href="anubhav.jpg"><img id="p011" src ="anubhav.jpg"  style="position" width="175" height="210" alt="Photo" align="right"></a></abbr><button onclick = myFunction() onmouseover="style.color='green'"
+<blockquote ><abbr title="ANUBHAV KUMAR"><a href="anubhav.jpg"><img id="p011" src ="image/anubhav.jpg"  style="position" width="175" height="210" alt="Photo" align="right"></a></abbr><button onclick = myFunction() onmouseover="style.color='green'"
 onmouseout="style.color='#ff5500'">Anu's Next pic</button></blockquote>
 
 <p><font size="5"><blockquote style="color:black" onmouseover="style.color='green'"
@@ -159,7 +159,7 @@ onmouseout="style.color='maroon'" moustyle="margin-left: 10px;padding-left: 15px
 
 
 
-<a href="#Boo"><p align="center">&copy@Anubhav's Resume</p></a>
+<a href="https://anubhavcse08.github.io/ResumeAnubhav.pdf" target="_blank"><p align="center">&copy@Anubhav's Resume</p></a>
 
 
 <FORM >
@@ -210,8 +210,8 @@ onmouseout="style.color='maroon'" moustyle="margin-left: 10px;padding-left: 15px
 		<div style="text-align:center"> 
 
          <video width="300" height="300" controls>
-         <source src="anuvideo.ogg" type="video/ogg" />
-         <source src="anuvideo.mp4" type="video/mp4" />
+         <source src="video/anuvideo.ogg" type="video/ogg" />
+         <source src="video/anuvideo.mp4" type="video/mp4" />
          Your browser does not support the video element.
       </video>
 	  </div>
@@ -231,8 +231,8 @@ onmouseout="style.color='maroon'" moustyle="margin-left: 10px;padding-left: 15px
 
 
 <audio autoplay>
-  <source src="Birds-Singing-Remix.ogg" type="audio/ogg">
-  <source src="Birds-Singing-Remix.mp3" type="audio/mpeg">
+  <source src="song/Birds-Singing-Remix.ogg" type="audio/ogg">
+  <source src="song/Birds-Singing-Remix.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 
@@ -259,7 +259,7 @@ function init() {
   var slide = new Slide(width, height, 'out');
 	var l1 = new THREE.ImageLoader();
 	l1.setCrossOrigin('Anonymous');
-	l1.load('supernature.jpg', function(img) {
+	l1.load('image/supernature.jpg', function(img) {
 	  slide.setImage(img);
 	})
   root.scene.add(slide);
@@ -267,7 +267,7 @@ function init() {
   var slide2 = new Slide(width, height, 'in');
   var l2 = new THREE.ImageLoader();
 	l2.setCrossOrigin('Anonymous');
-	l2.load('anubhavofficial.jpg', function(img) {
+	l2.load('image/anubhavofficial.jpg', function(img) {
 		slide2.setImage(img);
 	})
 	
@@ -284,7 +284,7 @@ function init() {
   var slide4 = new Slide(width, height, 'out');
   var l4 = new THREE.ImageLoader();
 	l4.setCrossOrigin('Anonymous');
-	l4.load('support.jpg', function(img) {
+	l4.load('image/support.jpg', function(img) {
 		slide4.setImage(img);
 	})
 	

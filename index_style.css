@@ -28,7 +28,7 @@ body{
         margin: auto;
 	font-size: 16px;
   	line-height: 1.42857143;
-        background-color: #f4f4f4;
+        background-color: red;
 	width: 100%;
 
 	
@@ -63,7 +63,7 @@ header{
 	color: #ffffff;
 	padding-top: 10px;
 	border-bottom: #00cc00 3px solid;
-	min-height: 80px;	
+	min-height: 110px;	
 }  
 header #branding{
 	float:left;	
@@ -102,7 +102,7 @@ h1.h::first-letter {
 	}
 
 .footimage{
-        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
     margin-left:12px;
 	margin-top:-50px;
@@ -113,17 +113,17 @@ h1.h::first-letter {
 
 @media screen and (max-width:980px){
   #footer {
-    margin-top:755px;
+    margin-top:0px;
     margin-bottom: 0;
-    padding: 4rem 0 2rem 0 ;s
+    padding: 4rem 0 2rem 0 ;
     background: #000;
     text-align: center;
   }
 }
 @media (min-width: 992px ) {
 .container {
-         width: 960px;
-        }
+        width: 960px;
+    }
 }
 @media (max-width: 992px) and (min-width: 768px) {
 .container{
@@ -132,54 +132,6 @@ h1.h::first-letter {
 }		
 
 
-
-/* log grid =====================*/
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 33%;
-    padding: 16px;
-    text-align:center;
-    color:#6495ED;
-}
-
-.colume p{
-	font-size: 14px;
-}
-.column img {
-    margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-    .column {
-        width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}	
 
 
 @charset "UTF-8";
@@ -221,7 +173,7 @@ z-index: 1;
 .wrap {
 width: 85%;
 margin: 0 auto;
-max-width:750px;
+max-width:740px;
 }
 
 .cf {
@@ -278,9 +230,20 @@ width: 100%;
 .last-col {
 float: right !important;
 padding-right: 0 !important;
+     
 }
 @media (max-width: 767px){
 .m-all{float:left;padding-right:0.75em;width:100%;padding-right:0}
+#visibilityHidden{visibility: hidden}
+   #paraSize{
+        font-size: 10px;
+    }
+}
+@media (max-width: 968px){
+#visibilityHidden{visibility: hidden}
+   #paraSize{
+        font-size: 18px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1029px){
 .t-1of2{float:left;padding-right:0.75em;width:50%}
@@ -289,21 +252,61 @@ padding-right: 0 !important;
 .d-1of2{float:left;padding-right:0.75em;width:50%}
 }
 
+#mythought {
+    color: white;
+    padding-left: 30%;
+    width: 140%;
+    height: auto;
+}
+#clgID {
+    padding-left: 40%;
+}
 .big {
-    font-size: 1.4em;
+    font-size: 1.5em;
     line-height: normal;
-    color: maroon;
+    color: #9aed71;
 }
 .big1 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     line-height: normal;
-    color: green;
+    color: white;
 }
 p {
-    margin: 30px 0;
+    margin: 0;
 	hyphens: none;
 }
-
+@media (max-width: 767px){
+    #clgID {
+        padding-left: 10%;
+    }
+    #mythought {
+        color: green;
+        padding-left: 11%;
+        width: 90%;
+    }
+    .big {
+        color: darkgreen;
+    }
+    .big1 {
+        color: maroon;
+    }
+}
+@media (max-width: 968px){
+    #clgID {
+        padding-left: 20%;
+    }
+    #mythought {
+        color: green;
+        padding-left: 11%;
+        width: 90%;
+    }
+    .big {
+        color: darkgreen;
+    }
+    .big1 {
+        color: maroon;
+    }
+}
 
 
 #our-story .section-bg {
@@ -312,6 +315,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 10px;
     width: 100%;
     height: 100%;
     display: none;
@@ -324,6 +328,7 @@ p {
     display: block;
     width: 100%;
 }
+}
 @media (min-width: 992px ) {
  #our-story .section-bg {
          width: 960px;
@@ -332,7 +337,7 @@ p {
 @media (max-width: 992px) and (min-width: 768px) {
 #our-story .section-bg {
             width: 80%;
-        }	
+        }
 }		
 
 .section .section-bg {
@@ -391,6 +396,69 @@ figure {
 	display: block;
 }
 
+#bgContent {
+    font-size: 1vw;
+    text-align: center;
+    color: white;
+    background-image: url(image/katsuraRiverJapan.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+a {
+    color: #04b7ae;
+    transition: color .1s linear;
+}
+#bgID {
+    background-image: url(image/sunrise.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: white;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: red;
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
