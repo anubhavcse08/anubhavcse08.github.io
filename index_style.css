@@ -421,7 +421,7 @@ a {
 
 #return-to-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     right: 20px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
@@ -447,7 +447,7 @@ a {
     margin: 0;
     position: relative;
     left: 16px;
-    top: 13px;
+    top: 10px;
     font-size: 19px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
