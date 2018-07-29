@@ -261,7 +261,7 @@ padding-right: 0 !important;
     font-size: 1vw;
     text-align: center;
     color: white;
-    background-image: url(image/village.jpg) !important;
+    background-image: url(image/woodbridge.jpg) !important;
     background-attachment: fixed;
     background-size: contain;
     background-size: cover;
@@ -504,7 +504,7 @@ figure {
         font-size: 1vw;
         text-align: center;
         color: white;
-        background-image: url(image/village2.jpg);
+        background-image: url(image/dataserver.jpg);
         background-attachment: fixed;
         background-size: contain;
         background-size: cover;
