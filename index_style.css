@@ -20,19 +20,14 @@ nav{
           box-sizing: border-box;
 }
 
-body{
-	font-family: 'Oswald', sans-serif;
-	font-size:16px;
-	line-height: 1.75;
-        padding: 0;
-        margin: auto;
-	font-size: 16px;
-  	line-height: 1.42857143;
-        background-color: red;
-	width: 100%;
-
-	
-}
+#content {
+    font-family: 'Oswald', sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    background: rgb(0,0,0,0.7);
+    text-align: center;
+    color: aliceblue;
+  }
 	/* slide photo content ==========*/
   .carousel-inner img {
       -webkit-filter: grayscale(90%);
@@ -239,14 +234,14 @@ padding-right: 0 !important;
         font-size: 10px;
     }
 }
-@media (max-width: 968px){
+@media (max-width: 1029px){
 #visibilityHidden{visibility: hidden}
    #paraSize{
         font-size: 18px;
     }
 }
 @media (min-width: 768px) and (max-width: 1029px){
-.t-1of2{float:left;padding-right:0.75em;width:50%}
+.t-1of2{float:left;padding-right:0.75em;width:100%}
 }
 @media (min-width: 1030px){
 .d-1of2{float:left;padding-right:0.75em;width:50%}
@@ -257,10 +252,22 @@ padding-right: 0 !important;
     padding-left: 30%;
     width: 140%;
     height: auto;
+    
 }
 #clgID {
     padding-left: 40%;
 }
+#footer {
+    font-size: 1vw;
+    text-align: center;
+    color: white;
+    background-image: url(image/village.jpg) !important;
+    background-attachment: fixed;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .big {
     font-size: 1.5em;
     line-height: normal;
@@ -275,25 +282,9 @@ p {
     margin: 0;
 	hyphens: none;
 }
-@media (max-width: 767px){
+@media (max-width: 1029px){
     #clgID {
-        padding-left: 10%;
-    }
-    #mythought {
-        color: green;
-        padding-left: 11%;
-        width: 90%;
-    }
-    .big {
-        color: darkgreen;
-    }
-    .big1 {
-        color: maroon;
-    }
-}
-@media (max-width: 968px){
-    #clgID {
-        padding-left: 20%;
+        padding-left: 30%;
     }
     #mythought {
         color: green;
@@ -308,6 +299,76 @@ p {
     }
 }
 
+
+@media (max-width: 767px){
+    #clgID {
+        padding-left: 25%;
+    }
+    #mythought {
+        color: green;
+        padding-left: 11%;
+        width: 90%;
+    }
+    .big {
+        color: darkgreen;
+    }
+    .big1 {
+        color: maroon;
+    }
+}
+
+@media (max-width: 567px){
+    
+    #clgID {
+        padding-left: 20%;
+    }
+    #mythought {
+        color: green;
+        padding-left: 10%;
+        width: 90%;
+    }
+    .big {
+        color: darkgreen;
+    }
+    .big1 {
+        color: maroon;
+    }
+}
+@media (max-width: 468px){
+    #clgID {
+        padding-left: 13%;
+    }
+    #mythought {
+        color: green;
+        padding-left: 15%;
+        width: 90%;
+        font-size: 0.8em;
+    }
+    .big {
+        color: darkgreen;
+    }
+    .big1 {
+        color: maroon;
+    }
+}
+@media (max-width: 400px){
+    #clgID {
+        padding-left: 0%;
+    }
+    #mythought {
+       
+        color: green;
+        padding-left: 20%;
+        width: 90%;
+        font-size: 0.7em;
+    }
+    .big {
+        color: darkgreen;
+    }
+    .big1 {
+        color: maroon;
+    }
+}
 
 #our-story .section-bg {
     background-position: 20% center;
@@ -334,9 +395,9 @@ p {
          width: 960px;
         }
 }
-@media (max-width: 992px) and (min-width: 768px) {
+@media (max-width: 1029px) and (min-width: 768px) {
 #our-story .section-bg {
-            width: 80%;
+            width: 50%;
         }
 }		
 
@@ -359,8 +420,8 @@ p {
 }
 @media only screen and (min-width: 768px){
 #our-story .section-bg:before {
-    width: 150%;
-    right: -50%;
+    width: 100%;
+    right: 0%;
 }
 }
 
@@ -406,22 +467,26 @@ figure {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+@media (max-width: 1029px) and (min-width: 368px) {
+    #bgContent {
+        font-size: 1vw;
+        text-align: center;
+        color: white;
+        background-image: url(image/village2.jpg);
+        background-attachment: fixed;
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
 a {
     color: #04b7ae;
     transition: color .1s linear;
 }
-#bgID {
-    background-image: url(image/sunrise.jpg);
-    background-attachment: fixed;
-    background-size: contain;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 #return-to-top {
     position: fixed;
-    bottom: 30px;
+    bottom: 60px;
     right: 20px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
@@ -447,7 +512,7 @@ a {
     margin: 0;
     position: relative;
     left: 16px;
-    top: 10px;
+    top: 13px;
     font-size: 19px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
