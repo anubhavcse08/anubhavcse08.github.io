@@ -257,16 +257,6 @@ padding-right: 0 !important;
 #clgID {
     padding-left: 40%;
 }
-#footer {
-    font-size: 1vw;
-    text-align: center;
-    color: white;
-    background-image: url(image/woodbridge.jpg) !important;
-    background-attachment: fixed;
-    background-size: contain;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .big {
     font-size: 1.5em;
@@ -499,6 +489,17 @@ figure {
     background-size: cover;
     background-repeat: no-repeat;
 }
+#footer {
+    font-size: 1vw;
+    text-align: center;
+    color: white;
+    background-image: url(image/village.jpg) !important;
+    background-attachment: fixed;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 @media (max-width: 1029px) and (min-width: 368px) {
     #bgContent {
         font-size: 1vw;
@@ -510,6 +511,17 @@ figure {
         background-size: cover;
         background-repeat: no-repeat;
     }
+    #footer {
+    	font-size: 1vw;
+    	text-align: center;
+   	color: white;
+    	background-image: url(image/railwaytrack.jpg) !important;
+    	background-attachment: fixed;
+    	background-size: contain;
+    	background-size: cover;
+    	background-repeat: no-repeat;
+   }
+
 }
 a {
     color: #04b7ae;
