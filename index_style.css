@@ -333,6 +333,9 @@ p {
     .big1 {
         color: maroon;
     }
+    #paraSize{
+        font-size: 14px;
+    }
 }
 @media (max-width: 468px){
     #clgID {
@@ -342,7 +345,7 @@ p {
         color: green;
         padding-left: 15%;
         width: 90%;
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     .big {
         color: darkgreen;
@@ -350,10 +353,36 @@ p {
     .big1 {
         color: maroon;
     }
+    #paraSize{
+        font-size: 12px;
+    }
 }
 @media (max-width: 400px){
     #clgID {
-        padding-left: 0%;
+        padding-left: 3%;
+    }
+    #mythought {
+        color: green;
+        padding-left: 17%;
+        width: 90%;
+        font-size: 0.8em;
+    }
+    #mythought h1 {
+        font-size: 30px;
+    }
+    .big {
+        color: darkgreen;
+    }
+    .big1 {
+        color: maroon;
+    }
+    #paraSize{
+        font-size: 12px;
+    }
+}
+@media (max-width: 368px){
+    #clgID {
+        padding-left: 1%;
     }
     #mythought {
        
@@ -367,6 +396,9 @@ p {
     }
     .big1 {
         color: maroon;
+    }
+    #paraSize{
+        font-size: 10px;
     }
 }
 
