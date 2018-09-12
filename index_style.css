@@ -255,7 +255,7 @@ padding-right: 0 !important;
     
 }
 #clgID {
-    padding-left: 40%;
+    padding-left: 60%;
 }
 
 .big {
@@ -274,7 +274,7 @@ p {
 }
 @media (max-width: 1029px){
     #clgID {
-        padding-left: 30%;
+        padding-left: 40%;
     }
     #mythought {
         color: green;
