@@ -1,0 +1,23 @@
+import React from 'react'
+import { Button, Menu,Icon } from 'semantic-ui-react'
+
+const MenuExampleButtons = () => (
+  <Menu inverted>
+    <Menu.Item>
+        <img src='https://react.semantic-ui.com/logo.png' />
+    </Menu.Item>
+    <Menu.Item>
+        <h3><b>Altimetrik Online Forum</b></h3>
+    </Menu.Item>
+    <Menu.Menu position='right'>
+      <Menu.Item>
+        <Button><Icon name='signup'/>Sign up</Button>
+      </Menu.Item>
+      <Menu.Item>
+        <Button><Icon name='sign in'/>Log-in</Button>
+      </Menu.Item>
+    </Menu.Menu>
+  </Menu>
+)
+
+export default MenuExampleButtons
