@@ -309,11 +309,12 @@ s0.parentNode.insertBefore(s1,s0);
 	/* jumbotron NAMASTE ==========*/	
 .jumbo{
     color: white;
-	background: #8B0000;
+    background: #8B0000;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 200px;
+	display:flex;
     justify-content: center;
     background-image: url(image/sunrise.jpg);
     background-attachment: fixed;
@@ -323,9 +324,9 @@ s0.parentNode.insertBefore(s1,s0);
 	
 }
 .innerjumbo {
-    padding-top: 50px;
-    padding-left: 7%;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 #namaste{
 	text-align: center;
@@ -377,10 +378,6 @@ s0.parentNode.insertBefore(s1,s0);
     #namaste {
         font-size: 25px; 
     }
-    .innerjumbo {
-        padding-left: 10%;
-        
-    }
 }
 @media (max-width: 868px) {
     .jumbo {
@@ -396,15 +393,8 @@ s0.parentNode.insertBefore(s1,s0);
     #namaste {
         font-size: 35px; 
     }
-    .innerjumbo {
-        padding-left: 20%;
-        
-    }
 }
 @media (max-width: 768px) {
-    .jumbo {
-        height: 200px;    
-    }
     #marq {
         width: 200px;
         height: 50px;
@@ -415,32 +405,18 @@ s0.parentNode.insertBefore(s1,s0);
     #namaste {
         font-size: 30px; 
     }
-    .innerjumbo {
-        padding-left: 15%;
-        
-    }
   
 }
 @media (max-width: 690px) {
-    .jumbo {
-        height: 200px;    
-    }
     #marq {
         width: 200px;
     }
     #namaste {
         font-size: 25px; 
     }
-    .innerjumbo {
-        padding-left: 12%;
-        
-    }
   
 }
 @media (max-width: 633px) {
-    .jumbo {
-        height: 200px;    
-    }
     #marq {
         width: 150px;
         height: 45px;
@@ -451,16 +427,9 @@ s0.parentNode.insertBefore(s1,s0);
     #namaste {
         font-size: 23px; 
     }
-    .innerjumbo {
-        padding-left: 12%;
-        
-    }
   
 }
 @media (max-width: 505px) {
-    .jumbo {
-        height: 200px;    
-    }
     #marq {
         width: 100px;
         height: 40px;
@@ -471,16 +440,9 @@ s0.parentNode.insertBefore(s1,s0);
     #namaste {
         font-size: 20px; 
     }
-    .innerjumbo {
-        padding-left: 18%;
-        
-    }
   
 }
 @media (max-width: 405px) {
-    .jumbo {
-        height: 200px;    
-    }
     #marq {
         width: 50px;
         height: 40px;
@@ -490,10 +452,6 @@ s0.parentNode.insertBefore(s1,s0);
     }
     #namaste {
         font-size: 17px; 
-    }
-    .innerjumbo {
-        padding-left: 20%;
-        
     }
   
 }
