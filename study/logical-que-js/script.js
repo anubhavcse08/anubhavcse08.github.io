@@ -1360,11 +1360,6 @@ counter() //1
 
 
 
-
-
-
-
-
 /* const textArr = ["Anubhav", "Chandu", "Sandeep", "Hero"];
 const changeTextWhileClicking = (arr) => {
     let clickedCount = 0;
@@ -1410,5 +1405,138 @@ changeTextWhileClicking(textArr); */
 }
 
 document.addEventListener("click", getPosition); */
+
+
+
+/* Reverse a string */
+/* unction reverseStr(str = "") {
+    return str.split("").reverse().join("");
+}
+console.log(reverseStr("Automation")); */
+
+/* // Check palindrom string
+const hasPalindromeStr = (str = "") => {
+    const originalStr = str;
+    return str.split("").reverse().join("") === originalStr;
+}
+
+console.log(hasPalindromeStr("madam"));
+console.log(hasPalindromeStr("Anubhav")); */
+
+/* // Fibonacci Series
+const fibonacciSeries = (num) => {
+    let a = 0, b = 1;
+    console.log(a, b);
+    for(let i = 2; i < num; i++) {
+        let c = a + b;
+        console.log(c);
+        a = b;
+        b = c;
+    }
+}
+
+const recursiveFibonacciSeries = (num, c) => {
+    if(num < 2) {
+        return 1;
+    }
+    return recursiveFibonacciSeries(num - 2) + recursiveFibonacciSeries(num - 1)
+}
+
+// console.log(fibonacciSeries(10));
+console.log(recursiveFibonacciSeries(7)); */
+
+/* // Find duplicate elements in the given array
+const findDuplicateElementsInArr = (arr = []) => {
+    const hash = {};
+    const duplicateElements = [];
+    for (let i = 0; i < arr.length; i++) {
+        hash[arr[i]] = (hash[arr[i]] || 0) + 1;
+    }
+    for (let k of Object.keys(hash)) {
+        if (hash[k] > 1) {
+            duplicateElements.push(parseInt(k));
+        }
+    }
+    return duplicateElements;
+}
+
+console.log(findDuplicateElementsInArr([1, 4, 5, 6, 3, 4, 1, 64, 2, 1, 64, 3,])); */
+
+/* // Find max and min in the given array
+const findMinMaxInArray = (arr = []) => {
+    // return `max: ${Math.max(...arr)} | min: ${Math.min(...arr)}`;
+    // let min = Number.MAX_VALUE;
+    // let max = Number.MIN_VALUE;
+    // for (let i = 0; i < arr.length; i++) {
+    //     if(min > arr[i]) {
+    //         min = arr[i];
+    //     }
+    //     if(max < arr[i]) {
+    //         max = arr[i];
+    //     }
+    // }
+    // return `max: ${max} | min: ${min}`;
+}
+
+console.log(findMinMaxInArray([ 3, 5, 84, 23, 4, 2, 7, 89, 4])); */
+
+/* // Find second max and min in the given array
+const findSecondMinMaxInArray = (arr = [], numberOfElement = 1) => {
+    const setArr = new Set(arr);
+    const max = Math.max(...setArr);
+    const min = Math.min(...setArr);
+
+    if(numberOfElement <= 0){
+        return `Secondmax: ${max} | Secondmin: ${min}`;
+    } else {
+        setArr.delete(max);
+        setArr.delete(min);
+        return findSecondMinMaxInArray([...setArr], numberOfElement - 1);
+    }
+}
+
+console.log(findSecondMinMaxInArray([ 3, 5, 84, 23, 4, 2, 7, 89, 4])); */
+
+/* //Selection Sort
+const selectionSort = (arr = [], resultedArr = []) => {
+    if(arr.length === 0) {
+        return resultedArr;
+    }
+    let i = 0, small = 0;
+    for (let j = 0; j < arr.length; j++) {
+        if(arr[small] > arr[j]) {
+            small = j;
+        }        
+    }
+    let temp = arr[i];
+    arr[i] = arr[small];
+    arr[small] = temp;
+    console.log(arr);
+    resultedArr.push(arr[i]);
+    return selectionSort(arr.splice(1), resultedArr);
+}
+
+console.log(selectionSort([ 3, 5, 84, 23, 4, 2, 7, 89, 4])) */
+
+/* //Bubble Sort
+const bubbleSort = (arr = []) => {
+    let count = 0;
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            count++;
+            console.log(arr[i], " > ", arr[i + 1])
+            let temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+        }
+    }
+    if (count === 0) {
+        return arr;
+    } else {
+        return bubbleSort(arr);
+    }
+}
+
+console.log(bubbleSort([3, 5, 84, 23, 4, 2, 7, 89, 4])); */
 
 
